@@ -10,42 +10,34 @@
   <!-- header -->
   <header class="main-header">
     <!-- header-logo -->
-    <div class="main-header__logo logo">
-      <a class="logo__link logo-icon" href="#">
-        <img class="logo-icon__image" src="../source/image/header/logo-picture-mobile.svg" width="34" height="38"
-          alt="изображение кэт энерджи.">
-      </a>
-      <a class="logo__link logo-text" href="#">
-        <img class="logo-text__image" src="../source/image/header/logo.svg" width="101" height="18"
-          alt="логотип кэт энерджи.">
-      </a>
-    </div>
+    <a class="main-header__link logo" href="#">
+      <img class="logo__icon" src="../source/image/header/logo-picture-mobile.svg" width="34" height="38"
+        alt="иконка кэт энерджи.">
+      <img class="logo__text" src="../source/image/header/logo.svg" width="101" height="18" alt="логотип кэт энерджи.">
+    </a>
     <!-- header-nav -->
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span> </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item  site-list__item--active">
-            <a class="site-list__link" href="#">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link" title="Вы находитесь на этой странице.">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
     </nav>
-
   </header>
+  <!-- main-form -->
   <main class="main-container">
     <h1 class="main-container__main-title main-title">Подбор программы</h1>
     <form class="main-container__form form" action="https://echo.htmlacademy.ru" method="get">
@@ -63,13 +55,16 @@
       </fieldset>
       <!-- form-radiobutton -->
       <fieldset class="form__form-radiobutton form-radiobutton">
-        <input class="form-radiobutton__radiobutton radiobutton" type="radio" name="type-of-service" value="get_slim"
-          checked>
-        <label class="form-radiobutton__form-label form-label">похудение</label>
-        <input class="form-radiobutton__radiobutton radiobutton" type="radio" name="type-of-service" value="get_weight">
-        <label class="form-radiobutton__form-label form-label">Набор массы</label>
-        <input class="form-radiobutton__radiobutton radiobutton" type="radio" name="type-of-service" value="advice">
-        <label class="form-radiobutton__form-label form-label">Не знаю (Нужен ваш
+        <label class="form-radiobutton__form-label form-label">
+          <input class="form-radiobutton__radiobutton radiobutton" type="radio" name="type-of-service" value="get-slim"
+            checked>похудение</label>
+        <label class="form-radiobutton__form-label form-label">
+          <input class="form-radiobutton__radiobutton radiobutton" type="radio" name="type-of-service"
+            value="get-weight">
+          Набор массы</label>
+        <label class="form-radiobutton__form-label form-label">
+          <input class="form-radiobutton__radiobutton radiobutton" type="radio" name="type-of-service" value="advice">
+          Не знаю (Нужен ваш
           совет)</label>
       </fieldset>
       <!-- form-contacts -->
@@ -107,46 +102,39 @@
       <button class="button" type="button">отправить заявку</button>
     </form>
     <p class="main-container__desc-form">* — Обязательные поля</p>
-    <!-- main-adress -->
-    <address class="main-container__contacts contacts">
-      <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__adress">ул. Большая
+    <!-- main-location -->
+    <address class="main-container__location location">
+      <p class="location__join">приглашаем к сотрудничеству дилеров!</p>
+      <p class="location__adress">ул. Большая
         Конюшенная, д. 19/8
         Санкт-Петербург</p>
+      <!-- map -->
+
+
+
     </address>
-    <!-- main-location -->
-    <section class="main-container__location location">
-      <h2 class="visually-hidden">Мы находимся здесь.</h2>
-
-
-    </section>
   </main>
   <!-- footer -->
   <footer class="main-footer">
-    <div class="main-footer__wrap">
-      <!-- footer-logo -->
-      <a class="main-footer__link logo-text" href="#">
-        <img class="logo-text__image" src="../source/image/header/logo.svg" width="101" height="18"
-          alt="логотип кэт энерджи.">
+    <!-- footer-logo -->
+    <a class="main-footer__link logo-text" href="#">
+      <img class="logo-text__image" src="../source/image/header/logo.svg" width="101" height="18"
+        alt="логотип кэт энерджи.">
+    </a>
+    <section class="main-footer__social social-groupe">
+      <!-- footer-social -->
+      <h2 class="visually-hidden">Давайте дружить!</h2>
+      <a class="social-groupe__link" href="#"><span class="visually-hidden">вконтакте.</span></a>
+      <a class="social-groupe__link" href="#"><span class="visually-hidden">ютюб.</span></a>
+      <a class="social-groupe__link" href="#"><span class="visually-hidden">телеграм.</span></a>
+    </section>
+    <!-- footer-htmlacademy-logo -->
+    <div class="main-footer__htmlacademy-logo-footer htmlacademy-logo">
+      <span class="htmlacademy-logo__desc">HTML Academy</span>
+      <a class="htmlacademy-logo__htmlacademy-logo-icon htmlacademy-logo-icon">
+        <img class="htmlacademy-logo-icon__image" src="image/htmlacademy-logo-icon.svg" width="27" height="34"
+          alt="Логотип htmlacademy иконка.">
       </a>
-      <section class="main-footer__social social-groupe">
-        <!-- footer-social -->
-        <h2 class="visually-hidden">Давайте дружить!</h2>
-        <a class="social-groupe__link" href="#"><span class="visually-hidden">вконтакте.</span></a>
-        <a class="social-groupe__link" href="#"><span class="visually-hidden">ютюб.</span></a>
-        <a class="social-groupe__link" href="#"><span class="visually-hidden">телеграм.</span></a>
-      </section>
-      <!-- footer-htmlacademy-logo -->
-      <div class="main-footer__htmlacademy-logo-footer htmlacademy-logo">
-        <a class="htmlacademy-logo__htmlacademy-logo-text htmlacademy-logo-text">
-          <img class="htmlacademy-logo-text__image" src="image/htmlacademy-logo-text.svg" width="113" height="19"
-            alt="Логотип htmlacademy.">
-        </a>
-        <a class="htmlacademy-logo__htmlacademy-logo-text htmlacademy-logo-icon">
-          <img class="htmlacademy-logo-icon__image" src="image/htmlacademy-logo-icon.svg" width="27" height="34"
-            alt="Логотип htmlacademy иконка.">
-        </a>
-      </div>
     </div>
   </footer>
 
