@@ -1,0 +1,37 @@
+
+.promo {
+  background-color: #ffffff;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.promo__promo-title {
+  padding-top: 27px;
+  margin: 0 auto;
+}
+
+.promo__promo-desc {
+  padding: 25px 0 164px;
+  margin: 0 auto;
+}
+
+.promo__promo-image {
+  display: block;
+  position: absolute;
+  top: 167px;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+.promo__link {
+  margin-top: 138px;
+}
+
+.promo__wrap {
+  background-color: rgba($color: #68b738, $alpha: 0.85);
+  color: #ffffff;
+}
+
+.promo__wrap-button {
+  padding: 0 20px;
+}

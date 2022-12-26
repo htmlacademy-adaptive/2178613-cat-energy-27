@@ -1,0 +1,53 @@
+@use "../global/bootstrap.scss";
+
+.feature {
+  padding: 0 20px 20px;
+  background-color: #ffffff;
+}
+
+.feature__wrap {
+  background-color: #f2f2f2;
+  position: relative;
+  padding: 18px;
+}
+
+.feature__title {
+  display: inline-block;
+  text-align: center;
+  font-family: "oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 auto 29px 73px;
+  padding-top: 12px;
+}
+
+.feature__cat-strong-icon {
+  position: absolute;
+  top: 24px;
+  left: 13px;
+}
+
+.feature__cat-slim-icon {
+  position: absolute;
+  top: 21px;
+  left: 22px;
+}
+
+.feature__desc {
+  margin: 0 2px 38px;
+}
+
+.feature__link {
+  @include bootstrap.link-reset;
+  padding: 4px 47px 4px 0;
+  margin-left: 1px;
+  font-family: "oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}

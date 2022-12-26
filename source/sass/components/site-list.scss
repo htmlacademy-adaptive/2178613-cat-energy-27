@@ -1,0 +1,19 @@
+@use "../global/bootstrap.scss";
+
+.site-list {
+  @include bootstrap.list-reset;
+}
+
+.site-list__item {
+
+}
+
+.site-list__link {
+  text-decoration: none;
+  font-family: "oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
