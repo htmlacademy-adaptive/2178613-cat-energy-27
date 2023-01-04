@@ -6,4 +6,12 @@
   align-items: center;
   text-transform: uppercase;
   color: #222222;
+
+  &--more {
+    color: #111111;
+  }
+
+  &--additional {
+    line-height: 16px;
+  }
 }

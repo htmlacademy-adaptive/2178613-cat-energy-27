@@ -3,6 +3,16 @@
 }
 
 .catalog-additional-products__gift {
-  font-size: 12px;
-  line-height: 16px;
+  background-color: rgba($color: #68b738, $alpha: 0.85);
+}
+
+.catalog-additional-products__product-additional-item-button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-additional-products__gift-wrap {
+  background-image: url("../../image/gift-cat-in-bag.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

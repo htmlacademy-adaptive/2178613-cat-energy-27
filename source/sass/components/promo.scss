@@ -27,9 +27,15 @@
   margin-top: 138px;
 }
 
-.promo__wrap {
+.promo__wrap-image {
   background-color: rgba($color: #68b738, $alpha: 0.85);
   color: #ffffff;
+}
+
+.promo__wrap {
+  background-image: url("../../image/promo-background-cat.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .promo__wrap-button {
