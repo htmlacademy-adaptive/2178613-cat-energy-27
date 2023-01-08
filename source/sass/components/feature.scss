@@ -8,7 +8,6 @@
 .feature__wrap {
   background-color: #f2f2f2;
   position: relative;
-  padding: 18px;
 }
 
 .feature__title {
@@ -20,24 +19,34 @@
   line-height: 37px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0 auto 29px 73px;
-  padding-top: 12px;
+  margin: 0 0 29px 91px;
+  padding-top: 30px;
+}
+
+.feature__icon-background {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: bootstrap.$basic-green;
+  position: absolute;
+  top: 24px;
+  left: 22px;
 }
 
 .feature__cat-strong-icon {
   position: absolute;
-  top: 24px;
+  top: 35px;
   left: 13px;
 }
 
 .feature__cat-slim-icon {
   position: absolute;
   top: 21px;
-  left: 22px;
+  left: 29px;
 }
 
 .feature__desc {
-  margin: 0 2px 38px;
+  margin: 0 20px;
 }
 
 .feature__link {

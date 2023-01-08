@@ -3,28 +3,25 @@
 }
 
 .page__body {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
 .page__main-header {
   margin: 0 auto;
-  grid-column: 1/-1;
-  display: flex;
-  justify-content: space-between;
 }
 
 .page__main-container {
   margin: 0 auto;
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
 }
 
 .page__main-footer {
   margin: 0 auto;
-  grid-column: 1/-1;
   display: flex;
   flex-direction: column;
 }

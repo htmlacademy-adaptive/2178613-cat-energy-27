@@ -2,6 +2,8 @@
 
 .site-list {
   @include bootstrap.list-reset;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-list__link {
@@ -12,4 +14,25 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .site-list {
+    flex-direction: row;
+    width: 440px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    padding: 18px 0 12px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .site-list__link {
+    font-family: "oswald", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
