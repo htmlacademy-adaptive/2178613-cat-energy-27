@@ -1,0 +1,18 @@
+.catalog-additional-products {
+  padding: 0 20px;
+}
+
+.catalog-additional-products__gift {
+  background-color: rgba($color: #68b738, $alpha: 0.85);
+}
+
+.catalog-additional-products__product-additional-item-button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-additional-products__gift-wrap {
+  background-image: url("../../image/image-mobile/cat-in-bag-catalog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

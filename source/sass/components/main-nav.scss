@@ -1,0 +1,25 @@
+@use "../global/bootstrap.scss";
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__toggle {
+  background-color: #ffffff;
+  border: 0;
+  margin-top: 24px;
+  padding: 0;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    min-height: 36px;
+    align-self: start;
+  }
+
+  .main-nav__list {
+    margin-top: 18px;
+  }
+}

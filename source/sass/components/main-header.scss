@@ -1,0 +1,33 @@
+@use "../global/bootstrap.scss";
+
+.main-header {
+  width: 100%;
+  min-height: 65px;
+  min-width: 280px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__link {
+  margin-top: 10px;
+}
+
+.main-header__main-nav {
+  margin: 0;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .main-header {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: bootstrap.$desktop-width) {
+  .main-header {
+    padding: 0 110px;
+  }
+}

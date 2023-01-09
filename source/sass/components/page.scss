@@ -1,0 +1,27 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.page__main-header {
+  margin: 0 auto;
+}
+
+.page__main-container {
+  margin: 0 auto;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.page__main-footer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}

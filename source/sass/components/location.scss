@@ -1,0 +1,27 @@
+.location {
+  padding: 26px 20px;
+  background-color: #ffffff;
+
+  &--inner {
+    background-color: #f2f2f2;
+  }
+}
+
+.location__join {
+  margin: 0;
+  font-family: "oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.location__adress {
+  margin: 0;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}

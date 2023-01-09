@@ -1,0 +1,42 @@
+.form {
+  padding: 0 20px;
+}
+
+.form__title {
+  font-family: "oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 39px;
+  padding: 0 20px 0;
+}
+
+.form__form-stats {
+  margin: 0;
+}
+
+.form__form-radiobutton {
+  margin: 0;
+}
+
+.form__form-contacts {
+  margin: 26px 0 0;
+}
+
+.form__form-checkbox {
+  margin: 0;
+}
+
+.form__button {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__desc-form {
+  text-align: center;
+  line-height: 16px;
+  color: #000000;
+}

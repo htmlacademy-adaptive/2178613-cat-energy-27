@@ -3,23 +3,29 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы "CAT ENERGY"</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page__body page__inner">
   <!-- header -->
-  <header class="main-header">
+  <header class="page__main-header main-header">
     <!-- header-logo -->
-    <a class="main-header__link logo" href="#">
-      <img class="logo__icon" src="../source/image/header/logo-picture-mobile.svg" width="34" height="38"
+    <a class="main-header__logo logo" href="#">
+      <img class="logo__logo-icon-mobile logo-icon-mobile" src="./image/image-mobile/icon/logo-mobile.svg" width="34" height="38"
         alt="иконка кэт энерджи.">
-      <img class="logo__text" src="../source/image/header/logo.svg" width="101" height="18" alt="логотип кэт энерджи.">
+      <img class="logo__logo-text logo-text" src="./image/image-mobile/icon/logo-text.svg" width="101" height="18" alt="логотип кэт энерджи.">
     </a>
     <!-- header-nav -->
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span> </button>
+    <nav class="main-header__main-nav main-nav">
+      <button class="main-nav__toggle" type="button"><svg width="24" height="18" viewBox="0 0 24 18" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke="#000" stroke-width="1.5" d="M0 1.3h24M0 9.3h24M0 17.3h24" />
+        </svg><span class="visually-hidden">Открыть меню.</span>
+      </button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--active">
           <a class="site-list__link" href="index.html">
             Главная
           </a>
@@ -29,7 +35,7 @@
             Каталог продукции
           </a>
         </li>
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item">
           <a class="site-list__link" title="Вы находитесь на этой странице.">
             Подбор программы
           </a>
@@ -38,7 +44,7 @@
     </nav>
   </header>
   <!-- main-form -->
-  <main class="main-container">
+  <main class="page__main-container main-container">
     <h1 class="main-container__main-title main-title">Подбор программы</h1>
     <form class="main-container__form form" action="https://echo.htmlacademy.ru" method="get">
       <h2 class="form__title">Заполните анкету, и мы подберем
@@ -69,7 +75,7 @@
       </fieldset>
       <!-- form-contacts -->
       <fieldset class="form__form-contacts form-contacts">
-        <legend class="form__form-legend form-legend">Контактные данные
+        <legend class="form-contacts__form-legend form-legend">Контактные данные
           (владельца кота)</legend>
         <label class="form-contacts__form-label form-label" for="form-email">E-mail:*</label>
         <input class="form-contacts__form-field form-field" type="email" name="form-email" id="form-email"
@@ -81,7 +87,7 @@
       <!-- form-comment -->
       <div class="form__form-comment form-comment">
         <label class="form-comment__form-legend form-legend" for="form-comment">Комментарий</label>
-        <textarea class="form-comment__field" name="form-comment" id="form-comment" cols="30" rows="10"
+        <textarea class="form-comment__field" name="form-comment" id="form-comment" cols="42" rows="8"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
       <!-- form-checkbox -->
@@ -89,24 +95,24 @@
         <legend class="form-checkbox__form-legend form-legend">Дополнительно</legend>
         <input class="form-checkbox__checkbox-window checkbox-window" type="checkbox" name="sweetener" id="sweetener"
           checked>
-        <label class="form-checkbox__form-lebel form-lebel" for="sweetener">сахарозаменитель</label>
+        <label class="form-checkbox__form-label form-label" for="sweetener">сахарозаменитель</label>
         <input class="form-checkbox__checkbox-window checkbox-window" type="checkbox" name="drinking-water"
           id="drinking-water">
-        <label class="form-checkbox__form-lebel form-lebel" for="drinking-water">питьевая вода</label>
+        <label class="form-checkbox__form-label form-label" for="drinking-water">питьевая вода</label>
         <input class="form-checkbox__checkbox-window checkbox-window" type="checkbox" name="milk" id="milk">
-        <label class="form-checkbox__form-lebel form-lebel" for="milk">молоко</label>
+        <label class="form-checkbox__form-label form-label" for="milk">молоко</label>
         <input class="form-checkbox__checkbox-window checkbox-window" type="checkbox" name="vitamins" id="vitamins">
-        <label class="form-checkbox__form-lebel form-lebel" for="vitamins">витамины</label>
+        <label class="form-checkbox__form-label form-label" for="vitamins">витамины</label>
       </fieldset>
       <!-- button -->
-      <button class="button" type="button">отправить заявку</button>
+      <button class="form__button button" type="button">отправить заявку</button>
+      <p class="form__desc-form">* — Обязательные поля</p>
     </form>
-    <p class="main-container__desc-form">* — Обязательные поля</p>
     <!-- main-location -->
-    <address class="main-container__location location">
-      <p class="location__join">приглашаем к сотрудничеству дилеров!</p>
-      <p class="location__adress">ул. Большая
-        Конюшенная, д. 19/8
+    <address class="main-container__location location location--inner">
+      <p class="location__join">приглашаем<br> к сотрудничеству<br> дилеров!</p>
+      <p class="location__adress">ул. Большая<br>
+        Конюшенная, д. 19/8<br>
         Санкт-Петербург</p>
       <!-- map -->
 
@@ -115,11 +121,10 @@
     </address>
   </main>
   <!-- footer -->
-  <footer class="main-footer">
+  <footer class="page__main-footer main-footer">
     <!-- footer-logo -->
-    <a class="main-footer__link logo-text" href="#">
-      <img class="logo-text__image" src="../source/image/header/logo.svg" width="101" height="18"
-        alt="логотип кэт энерджи.">
+    <a class="main-footer__link" href="#">
+      <img class="logo-text" src="./image/image-mobile/icon/logo-text.svg" width="128" height="24" alt="логотип кэт энерджи.">
     </a>
     <section class="main-footer__social social-groupe">
       <!-- footer-social -->
@@ -129,13 +134,11 @@
       <a class="social-groupe__link" href="#"><span class="visually-hidden">телеграм.</span></a>
     </section>
     <!-- footer-htmlacademy-logo -->
-    <div class="main-footer__htmlacademy-logo-footer htmlacademy-logo">
-      <span class="htmlacademy-logo__desc">HTML Academy</span>
-      <a class="htmlacademy-logo__htmlacademy-logo-icon htmlacademy-logo-icon">
-        <img class="htmlacademy-logo-icon__image" src="image/htmlacademy-logo-icon.svg" width="27" height="34"
-          alt="Логотип htmlacademy иконка.">
-      </a>
-    </div>
+    <a class="main-footer__htmlacademy-logo htmlacademy-logo" href="#">
+      <span class="htmlacademy-logo__htmlacademy-logo-desc">HTML Academy</span>
+      <img class="htmlacademy-logo__image" src="./image/image-mobile/icon/html academy.svg" width="27" height="34"
+        alt="Логотип htmlacademy иконка.">
+    </a>
   </footer>
 
 </body>

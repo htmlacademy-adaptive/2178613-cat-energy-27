@@ -1,0 +1,18 @@
+@use "../global/bootstrap.scss";
+
+.advantages-item:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.advantages-item__background-icon {
+  background-color: bootstrap.$basic-green;
+  height: 60px;
+  width: 60px;
+}
+
+.advantages-item__icon {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
