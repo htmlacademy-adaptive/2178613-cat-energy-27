@@ -1,18 +1,42 @@
+@use "../global/bootstrap.scss";
+
 .product-item {
   padding: 11px 0 14px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .product-item__button {
   font-size: 16px;
   line-height: 20px;
+  grid-column: 1/-1;
 }
 
 .product-item__desc {
   font-size: 12px;
   line-height: 16px;
+  grid-column: 1/-1;
+  text-align: center;
 }
 
 .product-item__product-item-title {
   color: #111111;
+}
+
+.product-item__product-item-title-more {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.product-item__inner-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .product-item__inner-wrap {
+    grid-column: span 2;
+    width: 252px;
+  }
 }

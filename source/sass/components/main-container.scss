@@ -1,9 +1,21 @@
+@use "../global/bootstrap.scss";
+
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .main-container__promo {
   grid-column: 1/-1;
 }
 
 .main-container__feature {
   grid-column: 1/-1;
+}
+
+.main-container__features-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .main-container__advantages {
@@ -36,4 +48,14 @@
 
 .main-container__catalog-additional-products {
   grid-column: 1/-1;
+}
+
+@media (min-width: bootstrap.$desktop-width) {
+  .main-container__feature {
+    grid-column: span 2;
+  }
+
+  .main-container__features-wrap {
+    gap: 80px;
+  }
 }

@@ -1,3 +1,14 @@
+.product-characteristics-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.product-characteristics-list__inner-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-characteristics-list__product-term {
   font-size: 12px;
   line-height: 16px;

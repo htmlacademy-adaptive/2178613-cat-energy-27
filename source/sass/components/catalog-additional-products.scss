@@ -1,5 +1,11 @@
+@use "../global/bootstrap.scss";
+
 .catalog-additional-products {
   padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .catalog-additional-products__gift {
@@ -15,4 +21,40 @@
   background-image: url("../../image/image-mobile/cat-in-bag-catalog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  grid-column: 1/-1;
+}
+
+.catalog-additional-products__catalog-additional-title {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.catalog-additional-products__product-additional-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.catalog-additional-products__product-additional-list {
+  grid-column: 1/-1;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .catalog-additional-products {
+    column-gap: 60px;
+  }
+}
+
+@media (min-width: bootstrap.$desktop-width) {
+  .catalog-additional-products__gift-wrap {
+    grid-area: 1/4/3/5;
+  }
+
+  .catalog-additional-products__product-additional-list {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  .catalog-additional-products__product-additional-item {
+    grid-column: 1/-1;
+  }
 }

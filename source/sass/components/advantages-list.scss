@@ -2,9 +2,30 @@
 
 .advantages-list {
   @include bootstrap.list-reset;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .advantages-list__advantages-item {
-  display: flex;
-  justify-content: flex-start;
+  grid-column: 1/-1;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .advantages-list {
+    column-gap: 60px;
+  }
+
+  .advantages-list__advantages-item {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: bootstrap.$desktop-width) {
+  .advantages-list {
+    column-gap: 80px;
+  }
+
+  .advantages-list__advantages-item {
+    grid-column: span 1;
+  }
 }
