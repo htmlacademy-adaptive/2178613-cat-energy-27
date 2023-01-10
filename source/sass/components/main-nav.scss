@@ -8,8 +8,9 @@
 .main-nav__toggle {
   background-color: #ffffff;
   border: 0;
-  margin-top: 24px;
   padding: 0;
+  margin: 0;
+  vertical-align: middle;
 }
 
 @media (min-width: bootstrap.$tablet-width) {
@@ -21,5 +22,9 @@
 
   .main-nav__list {
     margin-top: 18px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }

@@ -1,8 +1,9 @@
+@use "../global/bootstrap.scss";
 
 .promo {
-  background-color: #ffffff;
-  position: relative;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__promo-title {
@@ -11,34 +12,87 @@
 }
 
 .promo__promo-desc {
-  padding: 25px 0 164px;
+  padding: 25px 0 0;
   margin: 0 auto;
 }
 
 .promo__promo-image {
   display: block;
   position: absolute;
-  top: 167px;
-  transform: translate(-50%, 0);
   left: 50%;
+  transform: translateX(-50%);
+  margin-top: 167px;
 }
 
 .promo__link {
-  margin-top: 138px;
+  margin-top: 302px;
 }
 
-.promo__wrap-image {
-  background-color: rgba($color: #68b738, $alpha: 0.85);
-  color: #ffffff;
-}
-
-.promo__wrap {
+.promo__wrap-background-image {
   background-image: url("../../image/image-mobile/promo-image-background.jpg");
+  color: #ffffff;
+  height: 302px;
   background-repeat: no-repeat;
   background-size: 180%;
   background-position: 63% 50%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.promo__wrap {
+  background-color: rgba($color: #68b738, $alpha: 0.85);
+  height: inherit;
+  width: inherit;
 }
 
 .promo__wrap-button {
   padding: 0 20px;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .promo {
+    align-items: center;
+  }
+
+  .promo__wrap-background-image {
+    background-image: none;
+  }
+
+  .promo__wrap {
+    background-color: #ffffff;
+  }
+
+  .promo__link {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: bootstrap.$desktop-width) {
+  .promo__wrap {
+    background-color: rgba($color: #68b738, $alpha: 0.85);
+    height: 694px;
+    width: 720px;
+  }
+
+  .promo__wrap-background-image {
+    background-image: url("../../image/image-mobile/promo-image-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    height: 694px;
+    width: 720px;
+    position: absolute;
+    transform-origin: right top;
+    top: 0;
+    right: 0;
+  }
+
+  .promo {
+    min-height: 583px;
+    padding: 0 120px;
+  }
 }

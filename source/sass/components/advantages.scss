@@ -1,4 +1,11 @@
 .advantages {
   padding: 0 20px 49px 20px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.advantages__advantages-list {
+  align-self: stretch;
 }

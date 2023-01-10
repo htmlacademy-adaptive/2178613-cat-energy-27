@@ -3,3 +3,21 @@
 .product-list {
   @include bootstrap.list-reset;
 }
+
+@media (min-width: bootstrap.$tablet-width) {
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 141px 60px;
+  }
+
+  .product-list__product-item {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: bootstrap.$desktop-width) {
+  .product-list__product-item {
+    grid-column: span 1;
+  }
+}

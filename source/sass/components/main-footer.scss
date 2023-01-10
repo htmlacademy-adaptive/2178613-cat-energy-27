@@ -1,6 +1,10 @@
+@use "../global/bootstrap.scss";
+
 .main-footer {
   background-color: #f2f2f2;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-footer__link {
@@ -14,4 +18,15 @@
 .main-footer__htmlacademy-logo {
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .main-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-footer__link {
+    margin: 0;
+  }
 }
