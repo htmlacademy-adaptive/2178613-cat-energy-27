@@ -53,25 +53,26 @@
         программу питания для вашего кота</h2>
       <!-- form-stats -->
       <fieldset class="form__form-stats form-stats">
-        <label class="form-stats__form-label form-label" for="name">ИМЯ:*</label>
-        <input class="form-stats__form-field form-field" type="text" name="name" id="name" placeholder="БАРСИК"
-          required>
-        <label class="form-stats__form-label form-label" for="weight">ВЕС (КГ):*</label>
-        <input class="form-stats__form-field form-field" type="text" name="weight" id="weight" placeholder="7" required>
-        <label class="form-stats__form-label form-label" for="age">ВОЗРАСТ (ЛЕТ):</label>
-        <input class="form-stats__form-field form-field" type="text" name="age" id="age" placeholder="7">
+        <label class="form-stats__form-label">ИМЯ:*
+          <input class="form-stats__form-field" type="text" name="name" placeholder="БАРСИК" required>
+        </label>
+        <label class="form-stats__form-label">ВЕС (КГ):*
+          <input class="form-stats__form-field" type="text" name="weight" placeholder="7" required>
+        </label>
+        <label class="form-stats__form-label">ВОЗРАСТ (ЛЕТ):
+          <input class="form-stats__form-field" type="text" name="age" placeholder="7">
+        </label>
       </fieldset>
       <!-- form-radiobutton -->
       <fieldset class="form__form-radiobutton form-radiobutton">
-        <label class="form-radiobutton__form-label form-label">
-          <input class="form-radiobutton__radiobutton radiobutton" type="radio" name="type-of-service" value="get-slim"
+        <label class="form-radiobutton__form-label">
+          <input class="form-radiobutton__radiobutton" type="radio" name="type-of-service" value="get-slim"
             checked>похудение</label>
-        <label class="form-radiobutton__form-label form-label">
-          <input class="form-radiobutton__radiobutton radiobutton" type="radio" name="type-of-service"
-            value="get-weight">
+        <label class="form-radiobutton__form-label">
+          <input class="form-radiobutton__radiobutton" type="radio" name="type-of-service" value="get-weight">
           Набор массы</label>
-        <label class="form-radiobutton__form-label form-label">
-          <input class="form-radiobutton__radiobutton radiobutton" type="radio" name="type-of-service" value="advice">
+        <label class="form-radiobutton__form-label">
+          <input class="form-radiobutton__radiobutton" type="radio" name="type-of-service" value="advice">
           Не знаю (Нужен ваш
           совет)</label>
       </fieldset>
@@ -79,32 +80,41 @@
       <fieldset class="form__form-contacts form-contacts">
         <legend class="form-contacts__form-legend form-legend">Контактные данные
           (владельца кота)</legend>
-        <label class="form-contacts__form-label form-label" for="form-email">E-mail:*</label>
-        <input class="form-contacts__form-field form-field" type="email" name="form-email" id="form-email"
-          placeholder="kuklachev@gmail.com" required>
-        <label class="form-contacts__form-label form-label form-label--contacts" for="form-tel">Телефон:*</label>
-        <input class="form-contacts__form-field form-field form-field--tel" type="tel" name="form-tel" id="form-tel"
-          placeholder="8 (960) 900-60-90" required>
+        <label class="form-contacts__form-label">E-mail:*
+          <input class="form-contacts__form-field" type="email" name="form-email" placeholder="kuklachev@gmail.com"
+            required>
+        </label>
+        <label class="form-contacts__form-label form-contacts__form-label--contacts">Телефон:*
+          <input class="form-contacts__form-field form-contacts__form-field--tel" type="tel" name="form-tel"
+            placeholder="8 (960) 900-60-90" required>
+        </label>
       </fieldset>
       <!-- form-comment -->
       <div class="form__form-comment form-comment">
-        <label class="form-comment__form-legend form-legend" for="form-comment">Комментарий</label>
-        <textarea class="form-comment__field" name="form-comment" id="form-comment" cols="42" rows="8"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
+        <label class="form-comment__form-legend form-legend">Комментарий
+          <textarea class="form-comment__field" name="form-comment" cols="42" rows="8"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </label>
       </div>
       <!-- form-checkbox -->
       <fieldset class="form__form-checkbox form-checkbox">
         <legend class="form-checkbox__form-legend form-legend">Дополнительно</legend>
-        <input class="form-checkbox__checkbox-window checkbox-window" type="checkbox" name="sweetener" id="sweetener"
-          checked>
-        <label class="form-checkbox__form-label form-label" for="sweetener">сахарозаменитель</label>
-        <input class="form-checkbox__checkbox-window checkbox-window" type="checkbox" name="drinking-water"
-          id="drinking-water">
-        <label class="form-checkbox__form-label form-label" for="drinking-water">питьевая вода</label>
-        <input class="form-checkbox__checkbox-window checkbox-window" type="checkbox" name="milk" id="milk">
-        <label class="form-checkbox__form-label form-label" for="milk">молоко</label>
-        <input class="form-checkbox__checkbox-window checkbox-window" type="checkbox" name="vitamins" id="vitamins">
-        <label class="form-checkbox__form-label form-label" for="vitamins">витамины</label>
+        <label class="form-checkbox__form-label">
+          <input class="form-checkbox__checkbox-window" type="checkbox" name="sweetener" checked>
+          сахарозаменитель
+        </label>
+        <label class="form-checkbox__form-label">
+          <input class="form-checkbox__checkbox-window" type="checkbox" name="drinking-water">
+          питьевая вода
+        </label>
+        <label class="form-checkbox__form-label">
+          <input class="form-checkbox__checkbox-window" type="checkbox" name="milk">
+          молоко
+        </label>
+        <label class="form-checkbox__form-label">
+          <input class="form-checkbox__checkbox-window" type="checkbox" name="vitamins">
+          витамины
+        </label>
       </fieldset>
       <!-- button -->
       <button class="form__button button" type="button">отправить заявку</button>
