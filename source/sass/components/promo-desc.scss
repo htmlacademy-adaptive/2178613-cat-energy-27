@@ -12,5 +12,7 @@
 @media (min-width: bootstrap.$tablet-width) {
   .promo-desc {
     color: #000000;
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 }

@@ -18,5 +18,7 @@
 @media (min-width: bootstrap.$desktop-width) {
   .promo-title {
     color: #000000;
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }

@@ -28,9 +28,3 @@
   display: flex;
   flex-direction: column;
 }
-
-@media (min-width: bootstrap.$desktop-width) {
-  .page__main-header-index {
-    position: absolute;
-  }
-}
