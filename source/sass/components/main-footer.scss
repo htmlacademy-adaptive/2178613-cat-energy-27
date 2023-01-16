@@ -8,16 +8,18 @@
 }
 
 .main-footer__link {
-  margin: 40px auto 0;
+  margin: 40px auto 40px;
 }
 
 .main-footer__social {
   top: 115px;
+  margin: 0 auto 40px;
 }
 
 .main-footer__htmlacademy-logo {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto 40px;
 }
 
 @media (min-width: bootstrap.$tablet-width) {

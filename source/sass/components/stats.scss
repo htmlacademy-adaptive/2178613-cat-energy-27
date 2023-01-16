@@ -2,7 +2,6 @@
 
 .stats {
   background-color: #eaeaea;
-  padding: 25px 20px 40px;
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -29,6 +28,7 @@
   grid-column: 1/-1;
   margin: 0;
   flex-wrap: wrap;
+  max-width: 366px;
 }
 
 .stats__stats-item {
@@ -75,7 +75,16 @@
   .stats__list {
     grid-column: span 1;
     column-gap: 42px;
-    justify-content: flex-start;
+  }
+
+  .stats__desc-total {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .stats__desc-total-price {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

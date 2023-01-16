@@ -72,6 +72,8 @@
 @media (min-width: bootstrap.$desktop-width) {
   .form__form-stats {
     grid-column: span 2;
+    display: flex;
+    flex-direction: column;
   }
 
   .form__form-radiobutton {

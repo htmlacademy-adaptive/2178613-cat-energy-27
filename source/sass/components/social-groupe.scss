@@ -1,0 +1,68 @@
+@use "../global/bootstrap.scss";
+
+.social-groupe {
+  width: 132px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-groupe__link {
+  width: 28px;
+  height: 22px;
+  position: relative;
+}
+
+.social-groupe__link-vk {
+  fill: #666666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover,
+  &:focus {
+    fill: bootstrap.$basic-green;
+  }
+
+  &:active {
+    fill: bootstrap.$basic-green;
+    opacity: 0.3;
+  }
+}
+
+.social-groupe__link-youtube {
+  fill: #666666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover,
+  &:focus {
+    fill: bootstrap.$basic-green;
+  }
+
+  &:active {
+    fill: bootstrap.$basic-green;
+    opacity: 0.3;
+  }
+}
+
+.social-groupe__link-telegram {
+  fill: #666666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover,
+  &:focus {
+    fill: bootstrap.$basic-green;
+  }
+
+  &:active {
+    fill: bootstrap.$basic-green;
+    opacity: 0.3;
+  }
+}

@@ -13,18 +13,37 @@
 }
 
 .page__main-header {
-  margin: 0 auto;
+  position: relative;
 }
 
 .page__main-container {
-  margin: 0 auto;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  width: 100%;
 }
 
 .page__main-footer {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.page__body-wrapper {
+  padding: 0 20px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .page__body-wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: bootstrap.$desktop-width) {
+  .page__body-wrapper {
+    padding: 0 120px;
+  }
 }

@@ -1,7 +1,6 @@
 @use "../global/bootstrap.scss";
 
 .promo {
-  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -9,11 +8,13 @@
 .promo__promo-title {
   padding-top: 27px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .promo__promo-desc {
   padding: 25px 0 0;
   margin: 0 auto;
+  text-align: center;
 }
 
 .promo__promo-image {
@@ -22,6 +23,7 @@
   left: 50%;
   transform: translateX(-50%);
   margin-top: 167px;
+  z-index: -1;
 }
 
 .promo__link {
@@ -38,21 +40,25 @@
   width: 100%;
   position: absolute;
   z-index: -1;
+  box-sizing: border-box;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .promo__wrap {
   background-color: rgba($color: #68b738, $alpha: 0.85);
   height: inherit;
   width: inherit;
+  box-sizing: inherit;
 }
 
 .promo__wrap-button {
-  padding: 0 20px;
+  padding: 0;
 }
 
 @media (min-width: bootstrap.$tablet-width) {
   .promo {
-    align-items: center;
+    align-items: flex-start;
   }
 
   .promo__wrap-background-image {
@@ -68,6 +74,22 @@
     font-size: 20px;
     line-height: 20px;
     max-width: 350px;
+  }
+
+  .promo__promo-title {
+    margin: 62px 98px 41px;
+    padding: 0;
+    max-width: 500px;
+    text-align: start;
+  }
+
+  .promo__promo-desc {
+    margin: 0 50px 49px 100px;
+    text-align: start;
+  }
+
+  .promo__promo-image {
+    margin-top: 263px;
   }
 }
 
@@ -89,13 +111,34 @@
     transform-origin: right top;
     top: 0;
     right: 0;
+    transform: translateX(0);
   }
 
   .promo {
     min-height: 583px;
-    padding: 0 120px;
     display: grid;
     grid-template-columns: 500px auto;
     grid-template-rows: min-content min-content min-content auto auto;
+  }
+
+  .promo__promo-title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 114px 0 40px 70px;
+  }
+
+  .promo__promo-desc {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0 0 52px 70px;
+  }
+
+  .promo__wrap-button {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .promo__link {
+    margin: 0 0 0 70px;
   }
 }
