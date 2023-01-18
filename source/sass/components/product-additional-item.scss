@@ -1,0 +1,44 @@
+@use "../global/bootstrap.scss";
+
+.product-additional-item__product-descriptions {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-additional-item__product-item-title {
+  grid-column: 1/-1;
+}
+
+.product-additional-item__button {
+  grid-column: 1/-1;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .product-additional-item__product-item-title {
+    grid-column: span 2;
+  }
+
+  .product-additional-item__product-descriptions {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: bootstrap.$desktop-width) {
+  .product-additional-item {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+  }
+
+  .product-additional-item__product-item-title {
+    grid-column: span 1;
+  }
+
+  .product-additional-item__product-descriptions {
+    grid-column: span 1;
+  }
+
+  .product-additional-item__button {
+    grid-column: span 1;
+  }
+}

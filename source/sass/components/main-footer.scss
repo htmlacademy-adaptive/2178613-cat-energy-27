@@ -1,17 +1,34 @@
+@use "../global/bootstrap.scss";
+
 .main-footer {
   background-color: #f2f2f2;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-footer__link {
-  margin: 40px auto 0;
+  margin: 40px auto 40px;
 }
 
 .main-footer__social {
   top: 115px;
+  margin: 0 auto 40px;
 }
 
 .main-footer__htmlacademy-logo {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto 40px;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .main-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-footer__link {
+    margin: 0;
+  }
 }

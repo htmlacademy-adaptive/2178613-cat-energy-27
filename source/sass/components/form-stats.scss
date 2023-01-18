@@ -1,10 +1,31 @@
+@use "../global/bootstrap.scss";
+
 .form-stats {
   padding: 0 0 9px;
   border: 0;
 }
 
 .form-stats__form-field {
+  height: 45px;
+  border: 1px solid #e7e7e7;
+  padding: 14px 0 13px 20px;
+  box-sizing: border-box;
+  font-family: "oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
   margin-left: 13px;
   margin-bottom: 14px;
   right: 0;
+}
+
+.form-stats__form-label {
+  font-family: "oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
 }

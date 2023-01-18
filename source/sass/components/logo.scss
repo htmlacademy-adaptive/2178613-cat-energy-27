@@ -1,0 +1,26 @@
+@use "../global/bootstrap.scss";
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+@media (max-width: bootstrap.$mobile-width-only) {
+  .logo__logo-text {
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    min-height: 65px;
+  }
+
+  .logo__logo-icon-mobile {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
+}

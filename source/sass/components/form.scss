@@ -1,5 +1,9 @@
+@use "../global/bootstrap.scss";
+
 .form {
   padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .form__title {
@@ -11,32 +15,76 @@
   color: #000000;
   margin: 0 0 39px;
   padding: 0 20px 0;
+  grid-column: 1/-1;
 }
 
 .form__form-stats {
   margin: 0;
+  grid-column: 1/-1;
 }
 
 .form__form-radiobutton {
   margin: 0;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__form-contacts {
   margin: 26px 0 0;
+  grid-column: 1/-1;
+}
+
+.form__form-comment {
+  margin: 0;
+  grid-column: 1/-1;
 }
 
 .form__form-checkbox {
   margin: 0;
+  grid-column: 1/-1;
 }
 
 .form__button {
   width: 100%;
   font-size: 16px;
   line-height: 20px;
+  grid-column: 1/-1;
 }
 
 .form__desc-form {
+  grid-column: 1/-1;
   text-align: center;
   line-height: 16px;
   color: #000000;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .form__button {
+    grid-column: 1/3;
+  }
+
+  .form__desc-form {
+    grid-column: 3/5;
+  }
+}
+
+@media (min-width: bootstrap.$desktop-width) {
+  .form__form-stats {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__form-radiobutton {
+    grid-column: span 2;
+  }
+
+  .form__button {
+    grid-column: span 2;
+  }
+
+  .form__desc-form {
+    grid-column: span 2;
+  }
 }

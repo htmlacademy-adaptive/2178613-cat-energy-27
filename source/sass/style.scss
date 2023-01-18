@@ -24,10 +24,7 @@
 @use "./components/main-title.scss";
 @use "./components/form.scss";
 @use "./components/form-stats.scss";
-@use "./components/form-label.scss";
-@use "./components/form-field.scss";
 @use "./components/form-radiobutton.scss";
-@use "./components/radiobutton.scss";
 @use "./components/form-contacts.scss";
 @use "./components/form-legend.scss";
 @use "./components/form-comment.scss";
@@ -41,3 +38,9 @@
 @use "./components/product-additional-list.scss";
 @use "./components/gift.scss";
 @use "./components/product-desc.scss";
+@use "./components/product-link.scss";
+@use "./components/product-additional-item.scss";
+@use "./components/logo.scss";
+@use "./components/logo-text.scss";
+@use "./components/logo-icon-mobile.scss";
+@use "./components/social-groupe.scss";

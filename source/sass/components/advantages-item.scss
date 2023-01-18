@@ -1,13 +1,15 @@
 @use "../global/bootstrap.scss";
 
-.advantages-item:not(:last-child) {
+.advantages-item {
+  display: flex;
   padding-bottom: 20px;
+  justify-content: flex-start;
 }
 
 .advantages-item__background-icon {
   background-color: bootstrap.$basic-green;
   height: 60px;
-  width: 60px;
+  min-width: 60px;
 }
 
 .advantages-item__icon {
@@ -15,4 +17,31 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.advantages-item__advantages-desc {
+  margin-left: 20px;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .advantages-item__advantages-desc {
+    margin: 31px 0  0;
+  }
+
+  .advantages-item__background-icon {
+    align-self: flex-start;
+    min-width: 80px;
+    min-height: 80px;
+  }
+}
+
+@media (min-width: bootstrap.$desktop-width) {
+  .advantages-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .advantages-item__advantages-desc {
+    margin: 31px 0 0;
+  }
 }

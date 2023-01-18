@@ -1,7 +1,27 @@
+@use "../global/bootstrap.scss";
+
 .promo-desc {
   font-family: "oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .promo-desc {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+  }
+}
+
+@media (min-width: bootstrap.$desktop-width) {
+  .promo-desc {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+  }
 }

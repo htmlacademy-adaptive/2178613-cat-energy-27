@@ -2,14 +2,17 @@
 
 .main-header {
   width: 100%;
-  min-height: 65px;
+  height: 65px;
   min-width: 280px;
-  padding: 0 20px;
   background-color: #ffffff;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+@media (max-width: bootstrap.$mobile-width-only) {
+  .main-header {
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .main-header__link {
@@ -22,12 +25,13 @@
 
 @media (min-width: bootstrap.$tablet-width) {
   .main-header {
-    padding: 0 30px;
+    min-height: 116px;
   }
 }
 
 @media (min-width: bootstrap.$desktop-width) {
   .main-header {
-    padding: 0 110px;
+    min-height: 110px;
+    background-color: rgba($color: #ffffff, $alpha: 0);
   }
 }
